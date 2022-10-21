@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 45px;
+}
+
+body{
+    background-color: #3d3d3d;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+}
+
+.calculadora{
+    padding: 1em;
+    margin: 2.5em;
+     width: 400px;
+     color: #000;
+     flex-direction: column;
+     display: flex;
+     background-color: #1D1D1D;
+     border-radius: 20px;
+}
+
+.calculadora h1{
+    font-size: 1em;
+    font-weight: 200;
+    color: #fff;
+}
+
+#result{
+    background-color: #B0E0E6;
+    text-align: right;
+    width: 358px;
+    padding: 0.2em;
+    color: #000;
+    margin: 9px;
+    min-height: 1em;
+    overflow-wrap: break-word;
+}
+
+#teclado{
+    display: grid;
+    grid-template-columns: 2.2em 2.2em 2.2em 2.2em;
+}
+
+#teclado button{
+    border-radius: 10px;
+    margin: 3px;
+    height: 2em;
+    font-size: 1em;
+    background-color: #B0C4DE;
+    color: #000;
+}
+
+#teclado button.numero{
+    background-color: #00BFFF;
+    color: #fff;
+}
+
+#botao0{
+    grid-column: span 2;
+}
+
+#botaoIgual{
+    grid-column: span 2;
+}
+
+@media(max-width:390px)
+{
+    *{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    body{
+        padding-top: 100px;
+        background-color: #3d3d3d;
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+    }
+
+    .calculadora{
+        padding: 2em;
+        margin: 2em;
+         width: 200px;
+         color: #000;
+         flex-direction: column;
+         display: flex;
+         background-color: #1D1D1D;
+         border-radius: 20px;
+         padding-right: 100px;
+    }
+
+    .calculadora h1{
+        font-size: 0.739em;
+        font-weight: 200;
+        color: #fff;
+        padding-left: 60px;
+    }
+
+    #result{
+        background-color: #B0E0E6;
+        text-align: right;
+        width: 56vw;
+        padding: 0.2em;
+        color: #000;
+        margin: 10px;
+        min-height: 1.5em;
+        overflow-wrap: break-word;
+    }
+
+    #teclado{
+        display: grid;
+        grid-template-columns: 2.5em 2.5em 2.5em 2.5em;
+        height: 12em;
+    }
+
+    #teclado button{
+        border-radius: 10px;
+        margin: 4px;
+        height: 2.4em;
+        font-size: 1em;
+        background-color: #B0C4DE;
+        color: #000;
+    }
+}
